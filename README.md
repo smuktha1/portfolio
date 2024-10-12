@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Sathvika's Website
 
 Welcome to my website! This website showcases my projects in web development as I learn and implement interactive and responsive design principles using HTML and CSS.
@@ -25,4 +23,3 @@ To view my portfolio, .... Feel free to explore and provide feedback!
 I plan to continue enhancing this website by integrating more complex features, optimizing performance, and adding more projects as I learn and grow in my web development journey.
 
 Thank you for visiting!
->>>>>>> f3dfab52212815856ca76c029c78ce155b7e0f51
