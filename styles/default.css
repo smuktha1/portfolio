@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    overflow-x: hidden; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EAF7DF;
+    /* background-image: linear-gradient(#ff8400, #ce9627); */
+    scroll-behavior: smooth;
+}
+header{
+    color: #680009;
+}
+
+nav{
+    color: #400106
+}
+.wave {
+    display: inline-block;
+    transform-origin: 70% 70%; 
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;        
+    animation-iteration-count: 1;    
+}
+
+.wave:hover {
+    animation-name: wave-animation; 
+    animation-duration: 2.5s;       
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards; 
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(0.0deg) }
+   10% { transform: rotate(70.0deg) }  
+   20% { transform: rotate(-28.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-10.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate(0.0deg) }  
+  100% { transform: rotate(0.0deg) }
+}
+
+
+
+.sidebar {
+    width: 40%;
+    height: 100%;
+    overflow-y: auto; 
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.sidebar p {
+    color: rgba(34, 140, 234, 0.7);
+}
+
+.button-container {
+    display: flex; /* Use flexbox to align items side by side */
+    gap: 20px; /* Adjust space between buttons */
+}
+
+
+a{
+    position: relative;
+    padding: 3px 10px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 90px;
+    overflow: hidden;
+    border-radius: 45px;
+}
+a span {
+    position: relative;
+    color: #18986e;
+    font-size: 10px;
+    font-family: initial;
+    letter-spacing: 5px;
+    z-index: 1;
+}
+a .liquid{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #48ff00ba;
+    box-shadow: insert 0 0 50px rgb(139, 28, 158);
+    transition: 3s;
+}
+
+a .liquid::after, a .liquid::before{
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
+
+a .liquid::before{
+    border-radius: 40%;
+    background: rgb(255, 255, 255);
+    animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+    border-radius: 40%;
+    background: rgb(123, 193, 255);
+    animation: animate 10s linear infinite;
+}
+a:hover .liquid{
+    top: -150px;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
+
+
+.sub {
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    color: #18986e;
+}
+
+.sub p{
+    color: rgba(92, 197, 27, 0.7); 
+}
