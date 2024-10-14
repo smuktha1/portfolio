@@ -90,7 +90,7 @@ a .liquid{
     height: 200px;
     background: #48ff00ba;
     box-shadow: insert 0 0 50px rgb(139, 28, 158);
-    transition: 3s;
+    transition: 1s;
 }
 
 a .liquid::after, a .liquid::before{
