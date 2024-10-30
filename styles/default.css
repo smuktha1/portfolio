@@ -41,29 +41,11 @@ nav{
   100% { transform: rotate(0.0deg) }
 }
 
-
-
-.sidebar {
-    width: 40%;
-    height: 100%;
-    overflow-y: auto; 
-    padding-top: 100px;
-    padding-left: 50px;
-    padding-right: 20px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-.sidebar p {
-    color: rgba(34, 140, 234, 0.7);
-}
-
+/* liquid button */
 .button-container {
     display: flex; /* Use flexbox to align items side by side */
     gap: 20px; /* Adjust space between buttons */
 }
-
-
 a{
     position: relative;
     padding: 3px 10px;
@@ -89,7 +71,7 @@ a .liquid{
     width: 200px;
     height: 200px;
     background: #48ff00ba;
-    box-shadow: insert 0 0 50px rgb(139, 28, 158);
+    box-shadow: insert 0 0 50px rgba(183, 47, 207, 0.839);
     transition: 1s;
 }
 
@@ -129,6 +111,8 @@ a:hover .liquid{
 }
 
 
+
+
 .sub {
     padding-top: 10px;
     padding-left: 100px;
@@ -139,4 +123,63 @@ a:hover .liquid{
 
 .sub p{
     color: rgba(92, 197, 27, 0.7); 
+}
+
+/* table */
+table{
+    border-style: solid;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    
+}  
+th, td {
+    
+    text-align: left;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    color: White;
+}
+th{
+    background-color: rgba(67, 172, 38, 0.691);
+    color: darkblue;
+}
+tr:nth-child(even) {
+    background-color:  #18986e;
+}
+
+tr:nth-child(odd) {
+    background-color: #18986e;
+}
+
+/* photo card */
+.card-group {
+    max-width: 900px;
+    display: flex;
+    column-gap: 0.5px;
+    padding: 50px;
+    overflow-x: scroll;
+}
+.card {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    background-image: linear-gradient(85deg, #00ffcc, #2709cf);
+    padding: 15px;
+    box-shadow: -16px 0 32px rgba(211, 198, 77, 0.5);
+    border-radius: 25px;
+    transition: transform 250ms;
+}
+
+.card:not(:first-child) {
+    margin-left: -30px;
+   
+}
+.card:hover {
+    transform: translate(-8px, -16px)
+    rotate(3deg)
+}
+.card.hover ~ .card {
+    transform: translateX(130px);
 }
