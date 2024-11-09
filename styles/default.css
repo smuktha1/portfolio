@@ -4,16 +4,16 @@ body, html {
     height: 100%; 
     overflow-x: hidden; 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #EAF7DF;
+    background-color: #ffe9e9;
     /* background-image: linear-gradient(#ff8400, #ce9627); */
     scroll-behavior: smooth;
 }
 header{
-    color: #680009;
+    color: #000000;
 }
 
 nav{
-    color: #400106
+    color: #000000
 }
 .wave {
     display: inline-block;
@@ -31,14 +31,14 @@ nav{
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate(0.0deg) }
-   10% { transform: rotate(70.0deg) }  
-   20% { transform: rotate(-28.0deg) }
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
    30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(-4.0deg) }
    50% { transform: rotate(10.0deg) }
-   60% { transform: rotate(0.0deg) }  
-  100% { transform: rotate(0.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
 }
 
 /* liquid button */
@@ -58,7 +58,7 @@ a{
 }
 a span {
     position: relative;
-    color: #18986e;
+    color: #000000;
     font-size: 10px;
     font-family: initial;
     letter-spacing: 5px;
@@ -70,8 +70,8 @@ a .liquid{
     left: 0;
     width: 200px;
     height: 200px;
-    background: #48ff00ba;
-    box-shadow: insert 0 0 50px rgba(183, 47, 207, 0.839);
+    background: #cebcff;
+    box-shadow: insert 0 0 50px rgb(0, 0, 0);
     transition: 1s;
 }
 
@@ -83,18 +83,18 @@ a .liquid::after, a .liquid::before{
     top: 0;
     left: 50%;
     transform: translate(-50%, -75%);
-    background: #000;
+    background: #000000;
 }
 
 a .liquid::before{
-    border-radius: 40%;
-    background: rgb(255, 255, 255);
+    border-radius: 20%;
+    background: white;
     animation: animate 5s linear infinite;
 }
 
 a .liquid::after {
-    border-radius: 40%;
-    background: rgb(123, 193, 255);
+    border-radius: 43%;
+    background: #ffc6c6;
     animation: animate 10s linear infinite;
 }
 a:hover .liquid{
@@ -111,18 +111,16 @@ a:hover .liquid{
 }
 
 
-
-
 .sub {
     padding-top: 10px;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
-    color: #18986e;
+    color: rgb(255, 0, 0);
 }
 
 .sub p{
-    color: rgba(92, 197, 27, 0.7); 
+    color: black; 
 }
 
 /* table */
@@ -138,18 +136,18 @@ th, td {
     text-align: left;
     padding: 10px;
     border: 2px solid rgba(255, 255, 255, 0);
-    color: White;
+    color: black;
 }
 th{
-    background-color: rgba(67, 172, 38, 0.691);
-    color: darkblue;
+    background-color: rgba(255, 255, 255, 0.691);
+    color: rgb(255, 255, 255);
 }
 tr:nth-child(even) {
-    background-color:  #18986e;
+    background-color: black;
 }
 
 tr:nth-child(odd) {
-    background-color: #18986e;
+    background-color: #ffe1e1;
 }
 
 /* photo card */
@@ -165,11 +163,11 @@ tr:nth-child(odd) {
     display: flex;
     flex-direction: column;
     height: 90px;
-    background-image: linear-gradient(85deg, #00ffcc, #2709cf);
+    background-image: linear-gradient(85deg, #cebcff, #debbff);
     padding: 15px;
-    box-shadow: -16px 0 32px rgba(211, 198, 77, 0.5);
+    box-shadow: -16px 0 32px rgba(0, 0, 0, 0.168);
     border-radius: 25px;
-    transition: transform 250ms;
+    transition: transform 25ms;
 }
 
 .card:not(:first-child) {
