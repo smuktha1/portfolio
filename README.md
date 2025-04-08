@@ -1,3 +1,1 @@
-# Sathvika's Website
-
-Welcome to my website!
+Hello & Welcome!!
