@@ -5,6 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Certifications</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Container for all certifications */
+.about-containers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* Each individual certification card */
+.details-container {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 20;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-color: rgb(62, 62, 62);
+  background-color: #fff;
+}
+
+/* Responsive typography & layout */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+  .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-container {
+    width: 90%;
+  }
+}
+</style>
+
+
 </head>
 <body>
   <nav id="desktop-nav">
@@ -42,15 +93,19 @@
 
       <div class="details-container">
         <h3>Google: Foundations of Cybersecurity</h3>
-        <p>Completed: April 2025 <br />Platform: Coursera</p>
+        <br>
+        <p>Completed: April 2025</p>
+        <br>
         <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/certifications/foundations of Cybersecurity.pdf/')">view</button>
+            <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/certifications/foundationsCybersecurity.pdf')">view</button>
         </div>
       </div>
 
       <div class="details-container">
         <h3>AWS Certificate</h3>
-        <p>Completed: <br />Platform: AWS</p>
+        <br>
+        <p>Completed: March 2025</p>
+        <br>
         <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/certifications/AWS-cyberCertificate.pdf')">view</button>
         </div>
@@ -58,11 +113,14 @@
 
       <div class="details-container">
         <h3>Mastercard - Cybersecurity Job Simulation</h3>
-        <p>Completed: March 2025<br />Platform: Forge</p>
+        <br>
+        <p>Completed: March 2025 </p>
+        <br>
         <div class="btn-container">
             <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/certifications/forage.pdf')">view</button>
         </div>
       </div>
+
     </div>
   </section>
   <footer>
