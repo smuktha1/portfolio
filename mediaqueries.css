@@ -12,12 +12,33 @@
   }
 }
 
+#desktop-nav,
+#hamburger-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  height: 80px; /* Adjust this value as needed */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
+    position: fixed;
+
   }
   #hamburger-nav {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
   }
   #experience,
   .experience-details-container {
